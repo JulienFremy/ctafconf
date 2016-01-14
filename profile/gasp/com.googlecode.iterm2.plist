@@ -231,11 +231,11 @@
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
 	<key>NSWindow Frame Preferences</key>
-	<string>-1649 391 924 485 -1920 0 1920 1057 </string>
+	<string>271 391 924 485 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1879 11 1915 1046 -1920 0 1920 1057 </string>
+	<string>1 6 1969 1051 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 0 1915 1057 0 0 1920 1057 </string>
+	<string>49 11 1915 1046 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
 	<string>569 463 585 451 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1724,13 +1724,13 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>453628954.58129102</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>464256065.60255003</real>
+	<real>467108557.78255701</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenBookmark</key>
-	<true/>
+	<false/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>0</integer>
 	<key>PMPrintingExpandedStateForPrint2</key>
@@ -1789,11 +1789,11 @@
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>http://iterm2.com/appcasts/testing.xml</string>
+	<string>https://iterm2.com/appcasts/testing.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-09-18T08:00:05Z</date>
+	<date>2015-10-21T07:05:37Z</date>
 	<key>SUSkippedVersion</key>
 	<string>2.1</string>
 	<key>SavePasteHistory</key>
@@ -1843,6 +1843,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.1.1</string>
+	<string>2.1.4</string>
 </dict>
 </plist>
