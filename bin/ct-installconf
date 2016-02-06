@@ -262,6 +262,29 @@ class GrkSetupVim:
   FILES = [ (".vimrc"        ,    "etc/vim/vimrc"),
             (".gvimrc"       ,   "etc/vim/gvimrc") ]
   USERS         = [ ( ".vimrc.user"  , "vimrc.user") ]
+  def install(self):
+    """Make a symlink ~/.vim -> .config/etc/vim """
+    src  = os.path.join(SRC_DIR,  "etc/vim")
+    dest = os.path.join(DEST_DIR, ".vim")
+    # Back up ~/.vim if neccessary
+    identical = True
+    try:
+      identical = os.path.samefile(src, dest)
+    except OSError:
+      pass
+    if not identical:
+      dest_orig = dest + ".orig"
+      try:
+        os.rename(dest, dest_orig)
+      except OSError as e:
+        print("Could not backup", dest, "->", dest_orig)
+        print("Error was:", e)
+    try:
+      os.symlink(src, dest)
+    except OSError as e:
+      #symlink exists... ok we dont care
+      if e.errno != 17:
+        raise
 
 class GrkSetupGnomeTerminal:
   def install(self):
