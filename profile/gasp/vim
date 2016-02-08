@@ -77,3 +77,5 @@ set tags+=~/.vim/tags/tags
 set expandtab
 " Use 2 spaces for indenting
 set shiftwidth=2
+fixdel
+set backspace=indent,eol,start
