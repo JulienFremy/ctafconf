@@ -22,7 +22,6 @@ if hash qibuild 2>/dev/null;
 then
   HAS_QIBUILD=1
 else
-  echo >&2 "I require qibuild but it's not installed. Aborting."
   HAS_QIBUILD=0
 fi
 
