@@ -111,6 +111,9 @@ alias get='git '
 alias vim='vim --noplugin '
 alias mvim='mvim --noplugin '
 
+# tmux alias
+alias tmuxsource='tmux source-file ~/.tmux.conf'
+
 # $1 = type; 0 - both, 1 - tab, 2 - title
 # rest = text
 setTerminalText () {
