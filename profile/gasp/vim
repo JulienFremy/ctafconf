@@ -1,11 +1,13 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
+filetype plugin on
+runtime macros/matchit.vim
 
 " set the runtime path to include Vundle and initialize
-set rtp=~/local/vim/Vundle.vim
-call vundle#begin()
+set rtp=~/local/vim/Vundle.vim,/opt/local/share/vim/vim74
+"call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+call vundle#begin('~/local/vim/')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
@@ -26,11 +28,12 @@ Plugin 'gmarik/Vundle.vim'
 "" Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
 "
+
+Plugin 'xmledit'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -73,6 +76,7 @@ endfunction
 map <C-F12> :exec '!ctags --recurse --append --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q -f ~/.vim/tags/tags' GetRootDir() <CR>
 set tags+=~/.vim/tags/tags
 
+" Formatting " {{{
 " Do not use tabs for indenting
 set expandtab
 " Use 2 spaces for indenting
@@ -81,3 +85,15 @@ set softtabstop=2
 " fix backspace behavior
 fixdel
 set backspace=indent,eol,start
+
+syntax on
+" To ignore plugin indent changes, instead use:
+" filetype plugin on
+" }}}
+
+" Java edition " {{{
+set ai
+syntax on
+let java_highlight_all=1
+let java_highlight_functions="style"
+let java_allow_cpp_keywords=1
