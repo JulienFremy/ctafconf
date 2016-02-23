@@ -1,10 +1,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
-filetype plugin on
-runtime macros/matchit.vim
 
 " set the runtime path to include Vundle and initialize
-set rtp=~/local/vim/Vundle.vim,/opt/local/share/vim/vim74
+set rtp=~/local/vim/Vundle.vim,/Applications/MacVim.app/Contents/Resources/vim/runtime
 "call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 call vundle#begin('~/local/vim/')
@@ -44,6 +42,9 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" matchit, useful for xml
+runtime macros/matchit.vim
 
 " Ease window switching
 map <C-k> <C-w><Up>
@@ -98,3 +99,6 @@ syntax on
 let java_highlight_all=1
 let java_highlight_functions="style"
 let java_allow_cpp_keywords=1
+
+" use system clipboard
+set clipboard=unnamed

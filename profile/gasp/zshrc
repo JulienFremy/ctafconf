@@ -108,7 +108,7 @@ alias got='git '
 alias get='git '
 
 # vim alias
-alias vim='vim --noplugin '
+alias vim='/Applications/MacVim.app/Contents/MacOS/Vim --noplugin '
 alias mvim='mvim --noplugin '
 
 # tmux alias
